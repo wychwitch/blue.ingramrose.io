@@ -17,6 +17,15 @@
 		a{
 		text-decoration: underline !important;
 		}
+		ul{
+			list-style-type: none !important;
+		}
+		li::before{
+		content: "★ "
+		}
+		li>ul>li::before{
+		content: "☆ "
+		}
 		</style>
 	</head>
 	<body>
@@ -58,47 +67,52 @@
 					<h2>What is Developing Diversity in STEM?</h2>
 					<ul>
 						<li class=fragment>To be source of support and resource for people of marginalized identities.</li>
-						<li class=fragment>To help prepare those students for the unique challenges we face in this area of study, and specific fields within it.</li>
-						<li class=fragment>To give students the opportunity to build relationships with fellow STEM students</li>
+						<li class=fragment>To help prepare those students for the unique challenges we face in this area of study, and the specific fields within it.</li>
+						<li class=fragment>To give STEM students the opportunity build relationships with fellow students whos stories rhyme with their own.</li>
 					</ul>
 				</section>
 
 				<section data-background-gradient="linear-gradient(to bottom,  #77B48D,
 					#3E5F4A)">
 					<h2>What makes Developing Diversity different?</h2
-					<p class=fragment>Developing Diversity fills a gap that other organizations can't fill.</p>
+					<p class=fragment>Developing Diversity fills a gap that other organizations don't.</p>
 					<div class="left">
-						<h3 class=fragment>Other Diversity Orgs</h3>
+						<h3 class=fragment>Other Diversity Organizations</h3>
 						<ul>
-							<li class=fragment>A focus on supporting STEM specific needs, without taking away from their focus.</li>
+							<li class=fragment>We will have a focus on supporting their STEM specific needs, without taking away from the other organization's larger scopes.</li>
 						</ul>
 					</div>
 					<div class="right">
-						<h3 class=fragment>Other Stem Orgs</h3>
+						<h3 class=fragment>Other Stem Organizations</h3>
 						<ul>
-							<li class=fragment>Support students face challenges that we uniquely face, such as identifying and overcoming wash-out programs</li>
+							<li class=fragment>We will focus on helping students prepare to face challenges that we uniquely face in this area of study. Challenges such as identifying and overcoming wash-out programs, discrimination in software development, and much more.</li>
 						</ul>
 					</div>
-					<p class=fragment>We can collaborate with these organizations to fill this gap and help as many students as possible.</p>
+					<p class=fragment>If made official, we can collaborate with these organizations to fill this gap and help as many students as possible.</p>
 				</section>
 				<section data-background-gradient="linear-gradient(to bottom, #B76E91, #95265C)">
 					<h2>Why become an official student organization?</h2>
+					<p>With the resources JCCC can provide us, we can do so much more than we could on our own.</p>
 					<ul>
-						<p>With the resources JCCC can provide us, we can do so much more</p>
-						
-						<li class=fragment>Getting the word farther than we could alone</li>
-						<li class=fragment>A place to hold meetings and events</li>
-						<li class=fragment>Outreach programs</li>
-						<li class=fragment>Student-led workshops and seminars</li>
-						<li class=fragment>Collaboration with faculty</li>
-						<li class=fragment>Hosting diverse professionals in the STEM field to: 
+						<li class=fragment>Getting the word out farther.</li>
+						<li class=fragment>A place to hold meetings and events.</li>
+						<li class=fragment>Outreach programs.</li>
+						<li class=fragment>Student-led workshops and seminars.</li>
+						<li class=fragment>Collaboration with faculty.</li>
+					</ul>
+				</section>
+				<section data-background-gradient="linear-gradient(to bottom, #B76E91, #95265C)">
+					<h2>Bringing Diversity here.</h2>
+					<ul>
+						<li class=fragment>One major goal is to host diverse professionals in the STEM field to: 
 							<ul>
 								<li class=fragment>Participate in panels for all of JCCC to benefit from.</li>
+								<li class=fragment>Be a part of networking events focusing on diversity.</li>
 								<li class=fragment>Give advice.</li>
-								<li class=fragment>Provide representation that is sorely lacking within STEM</li>
+								<li class=fragment>Provide a source of representation that is sorely lacking within STEM.</li>
 							</ul>
 						</li>
-					</ul>
+
 				</section>
 				<section data-background-gradient="linear-gradient(to bottom, #E57471, #8C4737)">
 					<p>Questions?</p>
@@ -106,7 +120,7 @@
 
 				<section data-background-gradient="linear-gradient(to bottom, #6CAAE2, #487196)">
 					<img class="r-stretch" src="img/logo.png"></img>
-					<p>Thank you.</p>
+					<p>Thank you. ★</p>
 				</section>
 
 			</div>
@@ -117,6 +131,9 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+			Reveal.initialize({
+				plugins: [ RevealNotes ]
+			});
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
@@ -124,7 +141,8 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				totalTime: 240
 			});
 		</script>
 	</body>
